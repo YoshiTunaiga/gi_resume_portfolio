@@ -11,7 +11,7 @@ const Home = () => {
     { title: "Contact", route: "contact" },
   ];
   return (
-    <div>
+    <div style={{ margin: 50 }}>
       <div>
         <div>
           <div

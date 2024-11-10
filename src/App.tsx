@@ -7,10 +7,11 @@ import Contact from "./pages/Contact";
 import Navigation from "./components/Navigation";
 
 import "./App.css";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div style={{ flexGrow: 1, border: "1px solid" }}>
+    <div style={{ flexGrow: 1, margin: 10 }}>
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -18,6 +19,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
