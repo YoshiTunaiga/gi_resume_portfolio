@@ -70,7 +70,7 @@ export const experience = [
     title: "Sexual and Behavioral Health Educator",
     company:
       "Community Healthcare Network (non-profit organization), New York, NY",
-    period: "June 2021 - August 2021",
+    period: "Sept 2019 - June 2021",
     achievements: [
       "Operated a caseload of 90+ HIV-negative patients, delivering Sexual and Behavioral Health services focused on HIV/STI prevention and consistently documenting patient progress using eClinicalWorks HER.",
       "Collaborated with team members to conduct case studies, effectively analyzing and resolving complex challenges across various clinics within the organization.",

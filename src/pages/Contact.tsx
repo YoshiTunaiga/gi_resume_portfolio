@@ -17,14 +17,7 @@ const Contact = ({ id = "" }) => {
       style={{
         display: "flex",
         flexDirection: "column",
-        // height: "100vh",
         color: "#000000",
-        // background: `linear-gradient(rgba(0, 0, 0, 50%), rgba(0, 0, 0, 50%))`,
-        // backgroundSize: "cover",
-        // objectFit: "cover",
-        // backgroundRepeat: "no-repeat",
-        // backgroundPosition: "cover",
-        // backgroundAttachment: "fixed",
         justifyContent: "center",
         margin: 10,
       }}>
@@ -49,7 +42,6 @@ const Contact = ({ id = "" }) => {
             }}>
             <p
               style={{
-                // color: "#C7A03B",
                 fontFamily: "Times New Roman",
                 fontSize: "34px",
                 padding: 0,
@@ -99,7 +91,6 @@ const Contact = ({ id = "" }) => {
           </div>
           <div
             style={{
-              // background: "rgba(0,0,0, 0.1)",
               boxShadow: "-4px 4px 8px 2px #000000",
               borderRadius: "15px",
               width: "430px",
@@ -113,11 +104,11 @@ const Contact = ({ id = "" }) => {
                 justifyContent: "space-evenly",
                 textAlign: "center",
                 borderRadius: 10,
-                // border: "1px solid yellow",
                 height: "390px",
                 padding: "20px",
                 gap: 8,
               }}>
+              {/* ============= FORM ============= */}
               <p
                 style={{
                   color: "#000000",
@@ -128,7 +119,6 @@ const Contact = ({ id = "" }) => {
                 }}>
                 Contact Form
               </p>
-              {/* ============= FORM ============= */}
               <div style={{ color: "#000000" }}>
                 <form
                   id="myForm"
@@ -174,6 +164,7 @@ const Contact = ({ id = "" }) => {
                   </FormGrid>
                 </form>
               </div>
+
               {/* ============= BUTTONS ============= */}
               <div
                 style={{
@@ -181,13 +172,15 @@ const Contact = ({ id = "" }) => {
                   flexDirection: "row",
                   justifyContent: "space-evenly",
                 }}>
-                <Button
-                  variant="outlined"
-                  sx={{ display: "flex", flexDirection: "row", gap: 1 }}>
-                  <p>SEND</p>
-                  <SendIcon />
+                <Button variant="contained" size="small">
+                  <p style={{ display: "block", padding: 5, margin: 0 }}>
+                    SEND
+                  </p>
+                  <SendIcon sx={{ fontSize: "14px" }} />
                 </Button>
-                <Button variant="outlined">CLEAR</Button>
+                <Button variant="contained" size="small" color="secondary">
+                  CLEAR
+                </Button>
               </div>
             </div>
           </div>
