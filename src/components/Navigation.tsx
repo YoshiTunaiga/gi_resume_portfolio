@@ -53,7 +53,10 @@ const Navigation = (props: Props) => {
         {navItems.map((item) => (
           <ListItem key={item.title} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item.title} />
+              <ListItemText
+                primary={item.title}
+                onClick={() => router(`/${item.route}`)}
+              />
             </ListItemButton>
           </ListItem>
         ))}
@@ -66,7 +69,10 @@ const Navigation = (props: Props) => {
 
   return (
     <>
-      <AppBar component="nav" color="inherit">
+      <AppBar
+        component="nav"
+        color="inherit"
+        sx={{ border: "none", boxShadow: "none" }}>
         <Toolbar>
           <IconButton
             color="inherit"

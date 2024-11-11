@@ -14,11 +14,7 @@ import { volunteering } from "../../data";
 const Volunteering = () => {
   return (
     <Container maxWidth="lg" fixed sx={{ padding: "10 10 2 10" }}>
-      <Paper
-        elevation={3}
-        sx={{
-          p: 4,
-        }}>
+      <Paper elevation={3} sx={{ p: 4 }}>
         {/* Volunteering */}
         <Box sx={{ mb: 4 }}>
           <Typography variant="h6" gutterBottom>

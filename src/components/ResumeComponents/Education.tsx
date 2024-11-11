@@ -6,11 +6,7 @@ import { education, certifications } from "../../data";
 const Education = () => {
   return (
     <Container maxWidth="lg" fixed sx={{ padding: "10 10 2 10" }}>
-      <Paper
-        elevation={3}
-        sx={{
-          p: 4,
-        }}>
+      <Paper elevation={3} sx={{ p: 4 }}>
         {/* Education */}
         <Box sx={{ mb: 4 }}>
           <Typography variant="h6" gutterBottom>
@@ -28,9 +24,10 @@ const Education = () => {
                   sx={{
                     display: "flex",
                     flexDirection: "row",
+                    gap: 36,
                   }}>
                   <Grid>
-                    <Typography variant="h6" fontWeight="bold">
+                    <Typography variant="subtitle1" fontWeight="bold">
                       {edu.degree},{" "}
                       <span
                         style={{
