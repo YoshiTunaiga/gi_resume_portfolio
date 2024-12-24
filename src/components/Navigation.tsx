@@ -29,7 +29,7 @@ const drawerWidth = 240;
 const navItems = [
   { title: "Resume", route: "resume" },
   { title: "Projects", route: "projects" },
-  { title: "Contact", route: "contact" },
+  // { title: "Contact", route: "contact" },
 ];
 
 const Navigation = (props: Props) => {

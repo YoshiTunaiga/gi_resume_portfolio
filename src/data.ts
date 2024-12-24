@@ -80,6 +80,14 @@ export const experience = [
 
 export const education = [
   {
+    degree: "Computer Science",
+    school: "Western Governors University (WGU)",
+    subject: "Bachelor of Science in Computer Science",
+    year: "Present",
+    gpa: "",
+    location: "Online",
+  },
+  {
     degree: "Software Engineering",
     school: "Fullstack Academy",
     subject: "The Grace Hopper Program: Online Software Engineering Immersive",
@@ -116,13 +124,94 @@ export const education = [
 
 export const certifications = [
   {
+    title: "Introduction to Python Programming",
+    issuer: "Sophia Learning",
+    year: "2024",
+  },
+  {
+    title: "Introduction to Web Development",
+    issuer: "Sophia Learning",
+    year: "2024",
+  },
+  {
     title: "MongoDB Node.js Developer Path",
     issuer: "MongoDB University",
     year: "2023",
   },
+  {
+    title: "Responsive Web Design",
+    issuer: "freeCodeCamp",
+    year: "2022",
+  },
+  {
+    title: "PrEP for Adolescents and Young Adults",
+    issuer: "Clinical Education Initiative",
+    year: "2021",
+  },
+  {
+    title: "PrEP in Transgender Women: A missed opportunity?",
+    issuer: "University of Rochester School of Medicine and Dentistry",
+    year: "2021",
+  },
+  {
+    title: "Role of Non-Clinicians in Promoting PrEP",
+    issuer: "New York State Department of Health",
+    year: "2021",
+  },
+  {
+    title: "COVID-19, Drug Use & Harm Reduction",
+    issuer: "Clinical Education Initiative",
+    year: "2020",
+  },
+  {
+    title: "Basic Skills for Working with Transgender Clients",
+    issuer: "GMHC",
+    year: "2020",
+  },
+  {
+    title: "COVID-19 and Safe Operations",
+    issuer: "National Association of Emergency Medical Technicians",
+    year: "2020",
+  },
+  {
+    title: "PrEP for Women: Prevention Opportunities in Clinical Practice",
+    issuer: "University of Rochester School of Medicine and Dentistry",
+    year: "2020",
+  },
+  {
+    title: "PrEP for Women: Prevention Opportunities in Clinical Practice",
+    issuer: "University of Rochester School of Medicine and Dentistry",
+    year: "2020",
+  },
+  {
+    title: "Pre-Hospital Trauma Life Support",
+    issuer: "LaGuardia Community College",
+    year: "2019",
+  },
+  {
+    title: "Emergency Medical Technician, Basic",
+    issuer: "NYC Department of Health and Mental Hygiene",
+    year: "2018",
+  },
+  {
+    title: "Certified Customer Service Specialist (CSS)",
+    issuer: "Dale Carnegie Training",
+    year: "2015",
+  },
 ];
 
 export const volunteering = [
+  {
+    title: "Digital Corps Software Engineer",
+    organization: "Out in Tech",
+    period: "December 2024",
+    achievements: [
+      "Helped organizations around the world 🌎",
+      "Collaborated with designers, developers, and PMs using WordPress to create a multilingual site from scratch.",
+      "Built the Home page, the footer content, and the Contact Us page within a day.",
+    ],
+    location: "Remote",
+  },
   {
     title: "Digital Corps Software Engineer",
     organization: "Out in Tech",

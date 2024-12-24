@@ -2,39 +2,53 @@
 // import Typography from "@mui/material/Typography";
 // import Avatar from "@mui/material/Avatar";
 import { useNavigate } from "react-router-dom";
+import "../styles/Home.css";
 
 const Home = () => {
   const router = useNavigate();
   const portfolioItems = [
-    { title: "Resume", route: "resume" },
-    { title: "Projects", route: "projects" },
-    { title: "Contact", route: "contact" },
+    { title: "Resume", route: "resume", color: "#f5adad" },
+    { title: "Projects", route: "projects", color: "#89b7e1" },
+    { title: "Contact", route: "contact", color: "#f8f99a" },
   ];
   return (
-    <div style={{ margin: 50 }}>
-      <div>
-        <div>
+    <div className="profile-container">
+      <div className="profile-parent">
+        <div className="profile-details">
+          {/* ========== Profile Picture =========== */}
+          <div className="profile-picture">
+            <div className="profile-picture-background"></div>
+          </div>
+
+          {/* ========== About Me =========== */}
           <div
             style={{
-              flexDirection: "row",
-              alignSelf: "center",
-              gap: 4,
-              maxWidth: 450,
+              display: "flex",
+              flexDirection: "column",
+              gap: 5,
+              maxWidth: 500,
+              padding: 20,
             }}>
-            <img
-              alt="Gi Diaz Picture"
-              src="https://avatars.githubusercontent.com/u/85481752?v=4"
-              style={{ width: 400, height: 400 }}
-            />
-          </div>
-          {/* ========== About Me =========== */}
-          <div>
-            <div style={{ fontFamily: "Arial Black" }}>Gi Diaz</div>
+            <div
+              style={{
+                fontFamily: "Arial Black",
+                fontSize: "48px",
+                padding: 0,
+                margin: 0,
+              }}>
+              Gi Diaz
+            </div>
             <div style={{ textAlign: "left" }}>
-              <div style={{ fontFamily: "Arial Black" }}>
+              <div className="profile-details-name">
                 Allow Me To Introduce Myself
               </div>
-              <div style={{ fontFamily: "Arial" }}>
+              <div
+                style={{
+                  fontFamily: "Arial",
+                  marginTop: 5,
+                  // border: "1px solid olive",
+                  opacity: 0.8,
+                }}>
                 I am a a Full-div Software Engineer with a keen interest in data
                 analysis. My goal is to create impactful, user-centric
                 applications that drive business growth, enhance user
@@ -42,25 +56,23 @@ const Home = () => {
               </div>
             </div>
             <div
+              className="profile-options"
               style={{
+                display: "flex",
                 flexDirection: "row",
                 alignSelf: "center",
-                gap: 4,
+                gap: 8,
+                padding: 20,
                 maxWidth: 490,
               }}>
               {portfolioItems.map((item, index) => (
                 <div
                   key={index}
-                  style={{
-                    gap: 2,
-                    border: "1px solid",
-                    borderRadius: 30,
-                    padding: 5,
-                    cursor: "pointer",
-                  }}
+                  className="profile-option"
+                  style={{ backgroundColor: item.color }}
                   onClick={() => router(`/${item.route}`)}>
                   <div>
-                    <div style={{ fontWeight: "medium" }}>{item.title}</div>
+                    <div style={{ fontWeight: "bold" }}>{item.title}</div>
                   </div>
                 </div>
               ))}
