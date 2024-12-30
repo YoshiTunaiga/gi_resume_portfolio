@@ -72,8 +72,12 @@ const Navigation = (props: Props) => {
     <>
       <AppBar
         component="nav"
-        color="inherit"
-        sx={{ borderBottom: "1px solid #eee", boxShadow: "none" }}>
+        color="var(dark-background)"
+        sx={{
+          borderBottom: "1px solid var(--gray-border)",
+          boxShadow: "2px 2px 2px var(--gray-border)",
+          backgroundColor: "var(dark-background)",
+        }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -98,7 +102,7 @@ const Navigation = (props: Props) => {
             {navItems.map((item) => (
               <Button
                 key={item.title}
-                sx={{ color: "#000000" }}
+                sx={{ color: "var(--semantic-white)" }}
                 onClick={() => router(`/${item.route}`)}>
                 {item.title}
               </Button>
