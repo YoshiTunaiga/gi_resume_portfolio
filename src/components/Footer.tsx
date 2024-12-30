@@ -1,14 +1,14 @@
 import { Divider, Box, Typography, Link } from "@mui/material";
 import Grid from "@mui/material/Grid2";
-import { LinkedIn, GitHub, LocationOn } from "@mui/icons-material";
+import { LinkedIn, GitHub } from "@mui/icons-material";
 
 const Footer = () => {
   return (
     <>
-      <Divider />
+      <Divider style={{ backgroundColor: "var(--gold)" }} />
       <Grid container spacing={4} justifyContent="space-between" sx={{ py: 4 }}>
-        <Grid>
-          Contact Info
+        {/* <Grid>
+          Location
           <Box
             sx={{ display: "flex", justifyContent: "center", gap: 2, mb: 2 }}>
             <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
@@ -16,14 +16,16 @@ const Footer = () => {
               <Typography variant="body2">Kissimmee, FL</Typography>
             </Box>
           </Box>
-        </Grid>
+        </Grid> */}
         <Grid>
           LinkedIn
           <Box sx={{ display: "flex", justifyContent: "center", gap: 2 }}>
             <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
               <LinkedIn fontSize="small" />
               <Typography variant="body2">
-                <Link href="https://www.linkedin.com/in/gisseldiazf/">
+                <Link
+                  href="https://www.linkedin.com/in/gisseldiazf/"
+                  style={{ color: "var(--gold)" }}>
                   linkedin.com/in/gisseldiazf
                 </Link>
               </Typography>
@@ -36,7 +38,9 @@ const Footer = () => {
             <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
               <GitHub fontSize="small" />
               <Typography variant="body2">
-                <Link href="https://github.com/YoshiTunaiga">
+                <Link
+                  href="https://github.com/YoshiTunaiga"
+                  style={{ color: "var(--gold)" }}>
                   github.com/YoshiTunaiga
                 </Link>
               </Typography>
@@ -53,6 +57,7 @@ const Footer = () => {
                   flexWrap: "wrap",
                   display: "flex",
                   justifyContent: "center",
+                  color: "var(--gold)",
                 }}>
                 Gi Diaz, Full Stack Software Engineer
               </Typography>
