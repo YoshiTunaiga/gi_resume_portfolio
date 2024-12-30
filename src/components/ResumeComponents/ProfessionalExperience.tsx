@@ -13,7 +13,7 @@ import {
 import Grid from "@mui/material/Grid2";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
-import { experience, skills } from "../../data";
+import { experience, skills } from "../../data/data";
 
 const ProfessionalExperience = () => {
   return (
@@ -33,7 +33,7 @@ const ProfessionalExperience = () => {
 
         <Divider />
         {/* Experience */}
-        <Box sx={{ mb: 4 }}>
+        <Box sx={{ mb: 4, mt: 4 }}>
           <Typography variant="h6" gutterBottom>
             Professional Experience
           </Typography>

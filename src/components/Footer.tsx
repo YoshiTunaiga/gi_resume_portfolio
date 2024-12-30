@@ -1,4 +1,3 @@
-import React from "react";
 import { Divider, Box, Typography, Link } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import { LinkedIn, GitHub, LocationOn } from "@mui/icons-material";
@@ -48,7 +47,13 @@ const Footer = () => {
           &copy; {new Date().getFullYear()}
           <Box sx={{ display: "flex", justifyContent: "center", gap: 2 }}>
             <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
-              <Typography variant="body2">
+              <Typography
+                variant="body2"
+                sx={{
+                  flexWrap: "wrap",
+                  display: "flex",
+                  justifyContent: "center",
+                }}>
                 Gi Diaz, Full Stack Software Engineer
               </Typography>
             </Box>

@@ -5,6 +5,7 @@ import { TabPanel } from "../components/TabPanel";
 import Engineering from "../components/ProjectsComponents/Engineering";
 import DataAnalysis from "../components/ProjectsComponents/DataAnalysis";
 import LinkedInPosts from "../components/ProjectsComponents/LinkedInPosts";
+import Testimonials from "../components/ProjectsComponents/Testimonials";
 
 const Projects = () => {
   const [value, setValue] = useState(0);
@@ -17,8 +18,13 @@ const Projects = () => {
     <Container maxWidth="lg" sx={{ py: 4 }}>
       <Box
         sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignContent: "center",
           flexGrow: 1,
           bgcolor: "background.paper",
+          border: "1px solid #e0e0e0",
         }}>
         <Tabs
           variant="scrollable"
@@ -26,13 +32,17 @@ const Projects = () => {
           onChange={handleChange}
           TabIndicatorProps={{ sx: { display: "none" } }}
           sx={{
+            // border: "1px solid red",
             "& .MuiTabs-flexContainer": {
+              display: "flex",
+              flexDirection: "row",
               flexWrap: "wrap",
             },
           }}>
           <Tab label="Engineer" />
           <Tab label="Data Analysis" />
           <Tab label="LinkedIn Posts" />
+          <Tab label="LinkedIn Recommendations" />
         </Tabs>
         <TabPanel value={value} index={0}>
           <Engineering />
@@ -42,6 +52,9 @@ const Projects = () => {
         </TabPanel>
         <TabPanel value={value} index={2}>
           <LinkedInPosts />
+        </TabPanel>
+        <TabPanel value={value} index={3}>
+          <Testimonials />
         </TabPanel>
       </Box>
     </Container>

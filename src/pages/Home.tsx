@@ -1,6 +1,3 @@
-// import Stack from "@mui/material/Stack";
-// import Typography from "@mui/material/Typography";
-// import Avatar from "@mui/material/Avatar";
 import { useNavigate } from "react-router-dom";
 import "../styles/Home.css";
 
@@ -46,7 +43,6 @@ const Home = () => {
                 style={{
                   fontFamily: "Arial",
                   marginTop: 5,
-                  // border: "1px solid olive",
                   opacity: 0.8,
                 }}>
                 I am a a Full-div Software Engineer with a keen interest in data

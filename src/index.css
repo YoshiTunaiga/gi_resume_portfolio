@@ -1,4 +1,15 @@
 :root {
+  /*
+    Color Scheme
+  */
+  --primary: #646cff;
+  --secondary: #535bf2;
+  --semantic-white: #ffffff;
+  --resume-red: #f5adad;
+  --project-blue: #89b7e1;
+  --contact-yellow: #f8f99a;
+  --gold: #ffd700;
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;

@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 
-import { volunteering } from "../../data";
+import { volunteering } from "../../data/data";
 
 const Volunteering = () => {
   return (

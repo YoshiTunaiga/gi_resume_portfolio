@@ -1,7 +1,7 @@
 import { Container, Paper, Typography, Box, Divider } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 
-import { education, certifications } from "../../data";
+import { education, certifications } from "../../data/data";
 
 const Education = () => {
   return (
@@ -60,7 +60,7 @@ const Education = () => {
 
         <Divider />
         {/* Certifications */}
-        <Box sx={{ mb: 4 }}>
+        <Box sx={{ mb: 4, mt: 4 }}>
           <Typography variant="h6" gutterBottom>
             Certifications
           </Typography>

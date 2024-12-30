@@ -27,6 +27,7 @@ interface Props {
 
 const drawerWidth = 240;
 const navItems = [
+  { title: "Home", route: "" },
   { title: "Resume", route: "resume" },
   { title: "Projects", route: "projects" },
   // { title: "Contact", route: "contact" },
@@ -72,7 +73,7 @@ const Navigation = (props: Props) => {
       <AppBar
         component="nav"
         color="inherit"
-        sx={{ border: "none", boxShadow: "none" }}>
+        sx={{ borderBottom: "1px solid #eee", boxShadow: "none" }}>
         <Toolbar>
           <IconButton
             color="inherit"

@@ -76,6 +76,28 @@ export const experience = [
       "Collaborated with team members to conduct case studies, effectively analyzing and resolving complex challenges across various clinics within the organization.",
     ],
   },
+  {
+    title: "Call Center Specialist",
+    company:
+      "Community Healthcare Network (non-profit organization), New York, NY",
+    period: "Mar 2015 - Sept 2019",
+    achievements: [
+      "Provided a high-quality customer services for medical, dental and social services while scheduling appointments, verifying patient’s insurance information and serving as a communication link between patients, providers, hospitals and pharmacies",
+      "Educated the patients on their policies, procedures and confidentiality.",
+    ],
+  },
+  {
+    title: "Emergency Medical Technician",
+    company: "SeniorCare Emergency Medical Services, New York, NY",
+    period: "Sept 2018 - Nov 2019",
+    achievements: [
+      "Examined patients for signs and symptoms of illness/injury and assisted other medical personnel as necessary.",
+      "Provided prompt and efficient care of the patient and stabilization of their condition prior to transport, while carefully handle of the patient in moving them to the ambulance.",
+      "Administered basic pre-hospital care within the limits of certification and in accordance with approved protocols.",
+      "Ambulance driving experience with zero accidents. Approx. 1,000+ Field Hours.",
+      "Emergency, Non-emergency, BLS, Bariatric & Interstate Transport & Event Standby.",
+    ],
+  },
 ];
 
 export const education = [
@@ -233,5 +255,56 @@ export const volunteering = [
       "Tackled multiple tickets of these organizations in one day!",
     ],
     location: "Remote",
+  },
+];
+
+export const projectsData = [
+  {
+    title: "VitaCare - Patient Management System",
+    description:
+      "Healthcare Site - Patient Management System built on Vite React.js and TypeScript. The application helps patients create appointments and admins to verify these by confirming to schedule or cancel them.",
+    techSkills:
+      "React, Vite, TypeScript, Tailwind CSS, Appwrite, Shadcn-ui, REST API, Figma",
+    link: "",
+    image: "",
+  },
+  {
+    title: "NPI Medical Board",
+    description:
+      "A Vite-React app that serves as a data board that renders information based on a provider's NPI using Mimilab's NPI explorer API",
+    techSkills: "React, Vite, REST API, Material-UI, Figma",
+    link: "",
+    image: "",
+  },
+  {
+    title: "AlgoExplained",
+    description:
+      "A GitHub repository that stores a history of problems solved from various platforms using multiple programming languages such as JavaScript, Python, and TypeScript.",
+    techSkills: "JavaScript, TypeScript, Python Programming, Problem Solving",
+    link: "",
+    image: "",
+  },
+  {
+    title: "Astro Mart",
+    description: "Pick a star, name it, and own a piece of the universe.",
+    techSkills: "JavaScript, React, Node.js, Express, REST API, Figma",
+    link: "",
+    image: "",
+  },
+  {
+    title: "Rumble",
+    description:
+      "Self-improvement can be difficult, especially if you lack motivation. Luckily, there’s Rumble, find a Rival who challenges you to be a better version of yourself. ",
+    techSkills:
+      "React Native, Firebase, TypeScript, REST API, Styled-components, Figma",
+    link: "",
+    image: "",
+  },
+  {
+    title: "Snake Game",
+    description: "",
+    techSkills: "Python Programming, PyGame",
+    link: "",
+    image: "",
   },
 ];
