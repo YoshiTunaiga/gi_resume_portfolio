@@ -72,11 +72,10 @@ const Navigation = (props: Props) => {
     <>
       <AppBar
         component="nav"
-        color="var(dark-background)"
         sx={{
           borderBottom: "1px solid var(--gray-border)",
-          boxShadow: "2px 2px 2px var(--gray-border)",
-          backgroundColor: "var(dark-background)",
+          boxShadow: "1px 0 10px var(--gray-border)",
+          backgroundColor: "var(--dark-background)",
         }}>
         <Toolbar>
           <IconButton

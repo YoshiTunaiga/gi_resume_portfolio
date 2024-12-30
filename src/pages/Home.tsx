@@ -6,7 +6,7 @@ const Home = () => {
   const portfolioItems = [
     { title: "Resume", route: "resume", color: "#f5adad" },
     { title: "Projects", route: "projects", color: "#89b7e1" },
-    { title: "Contact", route: "contact", color: "#f8f99a" },
+    // { title: "Contact", route: "contact", color: "#f8f99a" },
   ];
   return (
     <div className="profile-container">
@@ -25,6 +25,7 @@ const Home = () => {
               gap: 5,
               maxWidth: 500,
               padding: 20,
+              textAlign: "center",
             }}>
             <div
               style={{
@@ -35,7 +36,7 @@ const Home = () => {
               }}>
               Gi Diaz
             </div>
-            <div style={{ textAlign: "left" }}>
+            <div>
               <div className="profile-details-name">
                 Allow Me To Introduce Myself
               </div>
@@ -65,7 +66,10 @@ const Home = () => {
                 <div
                   key={index}
                   className="profile-option"
-                  style={{ backgroundColor: item.color }}
+                  style={{
+                    backgroundColor: item.color,
+                    color: "var(--dark-background)",
+                  }}
                   onClick={() => router(`/${item.route}`)}>
                   <div>
                     <div style={{ fontWeight: "bold" }}>{item.title}</div>

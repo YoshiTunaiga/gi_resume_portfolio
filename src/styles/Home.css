@@ -32,7 +32,7 @@
   align-self: center;
   justify-content: center;
   box-shadow: 0 1px 0px 0px var(--semantic-white);
-  border-radius: 20%;
+  border-radius: 46%;
   height: 450px;
   width: 420px;
   padding: 20;
@@ -40,7 +40,7 @@
 }
 
 .profile-picture-background {
-  height: 93%;
+  height: 100%;
   width: 100%;
   background-image: url("https://avatars.githubusercontent.com/u/85481752?v=4");
   background-size: cover;
