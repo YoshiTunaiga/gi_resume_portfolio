@@ -80,6 +80,24 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className="profile-sub-section">
+        <div>
+          <p className="subheading-color">Language</p>
+          <p className="subheading-color-2">Billingual</p>
+        </div>
+        <div>
+          <p className="subheading-color">Location</p>
+          <p className="subheading-color-2">Florida</p>
+        </div>
+        <div>
+          <p className="subheading-color">Tech Experience</p>
+          <p className="subheading-color-2">2+ Years</p>
+        </div>
+        <div>
+          <p className="subheading-color">Customer Services</p>
+          <p className="subheading-color-2">12+ Years</p>
+        </div>
+      </div>
     </div>
   );
 };

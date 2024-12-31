@@ -6,17 +6,11 @@ const Footer = () => {
   return (
     <>
       <Divider style={{ backgroundColor: "var(--gold)" }} />
-      <Grid container spacing={4} justifyContent="space-between" sx={{ py: 4 }}>
-        {/* <Grid>
-          Location
-          <Box
-            sx={{ display: "flex", justifyContent: "center", gap: 2, mb: 2 }}>
-            <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
-              <LocationOn fontSize="small" />
-              <Typography variant="body2">Kissimmee, FL</Typography>
-            </Box>
-          </Box>
-        </Grid> */}
+      <Grid
+        container
+        spacing={10}
+        justifyContent="center"
+        sx={{ py: 4, textAlign: "center" }}>
         <Grid>
           LinkedIn
           <Box sx={{ display: "flex", justifyContent: "center", gap: 2 }}>
