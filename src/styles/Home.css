@@ -23,7 +23,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 }
 
 .profile-sub-section {
@@ -51,6 +51,16 @@
   height: 350px;
   width: 350px;
   padding: 20;
+}
+
+.profile-about {
+  display: flex;
+  flex-direction: column;
+  gap: 5;
+  width: 100%;
+  max-width: 500px;
+  padding: 20;
+  text-align: center;
 }
 
 .profile-picture-background {
@@ -200,7 +210,7 @@
     margin: 10px 0 0;
     /* width: 70%; */
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
 
@@ -210,7 +220,7 @@
     align-self: center;
   }
   .profile-parent {
-    flex-direction: column-reverse;
+    flex-direction: column;
     margin: 40px 0 0 0;
   }
   .profile-options {
@@ -221,7 +231,7 @@
     margin: 10px 0 0;
     /* width: 70%; */
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .profile-options .highlighted-btn {
     margin: 5px !important;
@@ -256,10 +266,10 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 430px) {
   .profile-parent {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     color: aliceblue;
   }
@@ -271,7 +281,49 @@
   .profile-details {
     /* width: 70%; */
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+  }
+
+  .profile-role-tagline {
+    font-size: 14px;
+    /* background-color: aliceblue; */
+    white-space: pre-wrap;
+    text-align: center;
+  }
+
+  .profile-details-role h1 {
+    font-size: 30px;
+    font-family: cursive;
+  }
+
+  .tagline {
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profile-details-role h1 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .profile-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+  }
+  .profile-picture {
+    height: 275px;
+    width: 275px;
+    margin-top: -90px;
+  }
+  .profile-details {
+    /* width: 70%; */
+    display: flex;
+    flex-direction: column;
   }
 
   .profile-role-tagline {

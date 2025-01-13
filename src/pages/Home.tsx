@@ -18,15 +18,7 @@ const Home = () => {
           </div>
 
           {/* ========== About Me =========== */}
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: 5,
-              maxWidth: 500,
-              padding: 20,
-              textAlign: "center",
-            }}>
+          <div className="profile-about">
             <div
               style={{
                 fontFamily: "Arial Black",

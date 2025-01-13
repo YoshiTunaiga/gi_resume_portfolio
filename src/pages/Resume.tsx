@@ -63,7 +63,7 @@ const Resume = () => {
               color: "var(--semantic-white)",
             },
             "& .Mui-selected": {
-              color: "var(--gold)",
+              color: "var(--gold) !important",
               textDecoration: "underline",
             },
           }}>
