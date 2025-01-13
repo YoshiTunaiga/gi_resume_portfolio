@@ -3,9 +3,9 @@ import React, { useState, SyntheticEvent } from "react";
 import { Container, Box, Tabs, Tab } from "@mui/material";
 import { TabPanel } from "../components/TabPanel";
 import Engineering from "../components/ProjectsComponents/Engineering";
-import DataAnalysis from "../components/ProjectsComponents/DataAnalysis";
-import LinkedInPosts from "../components/ProjectsComponents/LinkedInPosts";
-import Testimonials from "../components/ProjectsComponents/Testimonials";
+// import DataAnalysis from "../components/ProjectsComponents/DataAnalysis";
+// import LinkedInPosts from "../components/ProjectsComponents/LinkedInPosts";
+// import Testimonials from "../components/ProjectsComponents/Testimonials";
 
 const Projects = () => {
   const [value, setValue] = useState(0);
@@ -42,19 +42,19 @@ const Projects = () => {
               color: "var(--semantic-white)",
             },
             "& .Mui-selected": {
-              color: "var(--gold)",
+              color: "var(--gold) !important",
               textDecoration: "underline",
             },
           }}>
           <Tab label="Engineer" />
-          <Tab label="Data Analysis" />
+          {/* <Tab label="Data Analysis" />
           <Tab label="LinkedIn Posts" />
-          <Tab label="LinkedIn Recommendations" />
+          <Tab label="LinkedIn Recommendations" /> */}
         </Tabs>
         <TabPanel value={value} index={0}>
           <Engineering />
         </TabPanel>
-        <TabPanel value={value} index={1}>
+        {/* <TabPanel value={value} index={1}>
           <DataAnalysis />
         </TabPanel>
         <TabPanel value={value} index={2}>
@@ -62,7 +62,7 @@ const Projects = () => {
         </TabPanel>
         <TabPanel value={value} index={3}>
           <Testimonials />
-        </TabPanel>
+        </TabPanel> */}
       </Box>
     </Container>
   );

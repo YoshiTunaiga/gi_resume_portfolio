@@ -22,7 +22,13 @@ const Testimonials = () => {
     <Container maxWidth="xl" fixed sx={{ padding: "10 10 2 10" }}>
       <Paper
         elevation={3}
-        sx={{ p: 2, display: "flex", gap: 4, flexWrap: "wrap" }}>
+        sx={{
+          p: 2,
+          display: "flex",
+          gap: 4,
+          flexWrap: "wrap",
+          bgcolor: "var(--dark-background)",
+        }}>
         {testimonialsData.map((testimonial) => (
           <Card key={testimonial.date} sx={{ maxWidth: 400 }}>
             <CardHeader
