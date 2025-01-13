@@ -38,7 +38,7 @@ export const skills = [
 export const experience = [
   {
     title: "Full Stack Software Engineer",
-    company: "ApolloMed (now Astrana Health), Alhambra, CA",
+    company: "Astrana Health (former ApolloMed, Orma Health), Alhambra, CA",
     period: "May 2022 - March 2024",
     achievements: [
       "Built and maintained various scalable internal healthcare delivery applications as a core technical contributor for Astrana's Remote Patient Monitoring (RPM)/ Chronic Care Management (CCM) system, Orma.",
@@ -51,7 +51,7 @@ export const experience = [
   },
   {
     title: "Junior Software Developer",
-    company: "Budget Better (now Much), Techstars '22, Norwalk, CT",
+    company: "Much (former Budget Better), Techstars '22, Norwalk, CT",
     period: "February 2022 - May 2022",
     achievements: [
       "Accelerated the development of new user-facing social features on the Community Feed, resulting in 20% increased interaction and retention informed by user feedback.",
@@ -82,8 +82,9 @@ export const experience = [
       "Community Healthcare Network (non-profit organization), New York, NY",
     period: "Mar 2015 - Sept 2019",
     achievements: [
-      "Provided a high-quality customer services for medical, dental and social services while scheduling appointments, verifying patient’s insurance information and serving as a communication link between patients, providers, hospitals and pharmacies",
-      "Educated the patients on their policies, procedures and confidentiality.",
+      "Handled high-volume inbound calls with high-quality bilingual medical, dental, and social services customer service while scheduling appointments and verifying patients' insurance information.",
+      "Built strong, rapport-based relationships with a wide range of customers (e.g. patients, providers, hospitals, 911 departments, pharmacies), ensuring clarity and mutual understanding.",
+      "Assisted patients with educational information regarding their rights, the clinic's policies, procedures, and confidentiality.",
     ],
   },
   {

@@ -46,7 +46,7 @@ const Home = () => {
                   marginTop: 5,
                   opacity: 0.8,
                 }}>
-                I am a a Full-div Software Engineer with a keen interest in data
+                I am a Full-Stack Software Engineer with a keen interest in data
                 analysis. My goal is to create impactful, user-centric
                 applications that drive business growth, enhance user
                 experiences, and potentially save lives.

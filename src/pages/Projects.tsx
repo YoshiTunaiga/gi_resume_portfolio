@@ -23,8 +23,8 @@ const Projects = () => {
           justifyContent: "center",
           alignContent: "center",
           flexGrow: 1,
-          bgcolor: "background.paper",
-          border: "1px solid #e0e0e0",
+          bgcolor: "var(--dark-background)",
+          border: "1px solid var(--semantic-white)",
         }}>
         <Tabs
           variant="scrollable"
@@ -37,6 +37,13 @@ const Projects = () => {
               display: "flex",
               flexDirection: "row",
               flexWrap: "wrap",
+            },
+            "& .MuiButtonBase-root": {
+              color: "var(--semantic-white)",
+            },
+            "& .Mui-selected": {
+              color: "var(--gold)",
+              textDecoration: "underline",
             },
           }}>
           <Tab label="Engineer" />

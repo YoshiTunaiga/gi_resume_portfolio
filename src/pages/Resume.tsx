@@ -36,11 +36,19 @@ const Resume = () => {
   };
 
   return (
-    <Container maxWidth="lg" sx={{ py: 4 }}>
+    <Container
+      maxWidth="lg"
+      sx={{
+        py: 4,
+        "& .MuiContainer-root": {
+          margin: 0,
+        },
+      }}>
       <Box
         sx={{
           flexGrow: 1,
-          bgcolor: "background.paper",
+          bgcolor: "var(--dark-background)",
+          border: "1px solid var(--semantic-white)",
         }}>
         <Tabs
           variant="scrollable"
@@ -50,6 +58,13 @@ const Resume = () => {
           sx={{
             "& .MuiTabs-flexContainer": {
               flexWrap: "wrap",
+            },
+            "& .MuiButtonBase-root": {
+              color: "var(--semantic-white)",
+            },
+            "& .Mui-selected": {
+              color: "var(--gold)",
+              textDecoration: "underline",
             },
           }}>
           <Tab label="Professional Experience" />
