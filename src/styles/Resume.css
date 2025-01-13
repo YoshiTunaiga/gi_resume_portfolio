@@ -1,0 +1,29 @@
+.single-ed-container {
+  display: flex;
+  flex-direction: column;
+  height: 10%;
+  gap: 20px;
+  min-height: fit-content;
+  margin-bottom: 10px;
+  padding: 10px;
+  max-width: 1200px !important;
+}
+
+.single-education-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+  text-align: left;
+  width: 100%;
+}
+
+@media screen and (max-width: 430px) {
+  .single-ed-container {
+    gap: 30px;
+  }
+
+  .single-education-grid {
+    flex-direction: column;
+  }
+}

@@ -17,7 +17,16 @@ import { experience, skills } from "../../data/data";
 
 const ProfessionalExperience = () => {
   return (
-    <Container maxWidth="lg" sx={{ padding: "10 10 2 10" }}>
+    <Container
+      maxWidth="xl"
+      sx={{
+        padding: "10 10 2 10",
+        "& .MuiContainer-root": {
+          margin: 0,
+          paddingLeft: 0,
+          paddingRight: 0,
+        },
+      }}>
       <Paper elevation={3} sx={{ p: 4 }}>
         {/* Technical Skills */}
         <Box sx={{ mb: 4 }}>
@@ -31,7 +40,7 @@ const ProfessionalExperience = () => {
           </Box>
         </Box>
 
-        <Divider />
+        <Divider sx={{ my: 2 }} />
         {/* Experience */}
         <Box sx={{ mb: 4, mt: 4 }}>
           <Typography variant="h6" gutterBottom>
@@ -58,7 +67,13 @@ const ProfessionalExperience = () => {
                   </Typography>
                 </Grid>
               </Grid>
-              <List dense>
+              <List
+                dense
+                sx={{
+                  "& .MuiListItemIcon-root": {
+                    minWidth: 34,
+                  },
+                }}>
                 {job.achievements.map((achievement, i) => (
                   <ListItem key={i}>
                     <ListItemIcon>
