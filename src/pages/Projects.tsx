@@ -3,9 +3,10 @@ import React, { useState, SyntheticEvent } from "react";
 import { Container, Box, Tabs, Tab } from "@mui/material";
 import { TabPanel } from "../components/TabPanel";
 import Engineering from "../components/ProjectsComponents/Engineering";
-// import DataAnalysis from "../components/ProjectsComponents/DataAnalysis";
-// import LinkedInPosts from "../components/ProjectsComponents/LinkedInPosts";
-// import Testimonials from "../components/ProjectsComponents/Testimonials";
+import DataAnalysis from "../components/ProjectsComponents/DataAnalysis";
+import LinkedInPosts from "../components/ProjectsComponents/LinkedInPosts";
+import Testimonials from "../components/ProjectsComponents/Testimonials";
+import "../styles/projects.css";
 
 const Projects = () => {
   const [value, setValue] = useState(0);
@@ -15,9 +16,19 @@ const Projects = () => {
   };
 
   return (
-    <Container maxWidth="lg" sx={{ py: 4 }}>
+    <Container
+      maxWidth="xl"
+      sx={{
+        py: 4,
+        "& .MuiContainer-root": {
+          margin: 0,
+          paddingLeft: 0,
+          paddingRight: 0,
+        },
+      }}>
       <Box
         sx={{
+          minWidth: { xs: "100%", sm: "100%" },
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
@@ -32,7 +43,6 @@ const Projects = () => {
           onChange={handleChange}
           TabIndicatorProps={{ sx: { display: "none" } }}
           sx={{
-            // border: "1px solid red",
             "& .MuiTabs-flexContainer": {
               display: "flex",
               flexDirection: "row",
@@ -47,14 +57,14 @@ const Projects = () => {
             },
           }}>
           <Tab label="Engineer" />
-          {/* <Tab label="Data Analysis" />
+          <Tab label="Data Analysis" />
           <Tab label="LinkedIn Posts" />
-          <Tab label="LinkedIn Recommendations" /> */}
+          <Tab label="LinkedIn Recommendations" />
         </Tabs>
         <TabPanel value={value} index={0}>
           <Engineering />
         </TabPanel>
-        {/* <TabPanel value={value} index={1}>
+        <TabPanel value={value} index={1}>
           <DataAnalysis />
         </TabPanel>
         <TabPanel value={value} index={2}>
@@ -62,7 +72,7 @@ const Projects = () => {
         </TabPanel>
         <TabPanel value={value} index={3}>
           <Testimonials />
-        </TabPanel> */}
+        </TabPanel>
       </Box>
     </Container>
   );

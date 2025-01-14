@@ -15,7 +15,6 @@ import { styled } from "@mui/material/styles";
 import IconButton, { IconButtonProps } from "@mui/material/IconButton";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { LinkedIn, GitHub } from "@mui/icons-material";
-
 interface ExpandMoreProps extends IconButtonProps {
   expand: boolean;
 }
@@ -53,7 +52,16 @@ const Engineering = () => {
   };
 
   return (
-    <Container maxWidth="xl" fixed sx={{ padding: "10 0 2 0" }}>
+    <Container
+      maxWidth="xl"
+      sx={{
+        padding: "10 10 2 10",
+        "& .MuiContainer-root": {
+          margin: 0,
+          paddingLeft: 0,
+          paddingRight: 0,
+        },
+      }}>
       <Paper
         elevation={0}
         sx={{
