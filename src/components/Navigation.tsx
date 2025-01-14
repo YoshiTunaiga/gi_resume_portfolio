@@ -30,7 +30,7 @@ const navItems = [
   { title: "Home", route: "" },
   { title: "Resume", route: "resume" },
   { title: "Projects", route: "projects" },
-  // { title: "Contact", route: "contact" },
+  { title: "Contact", route: "contact" },
 ];
 
 const Navigation = (props: Props) => {

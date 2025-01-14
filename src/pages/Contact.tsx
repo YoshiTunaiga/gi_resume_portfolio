@@ -1,9 +1,8 @@
-import React from "react";
-import { Box, Button, Link, TextField } from "@mui/material";
+import { Button, TextField } from "@mui/material";
 import Grid from "@mui/material/Grid2";
-import { GitHub, LinkedIn } from "@mui/icons-material";
 import SendIcon from "@mui/icons-material/Send";
 import { styled } from "@mui/system";
+import "../styles/Contact.css";
 
 const FormGrid = styled(Grid)(() => ({
   display: "flex",
@@ -12,34 +11,10 @@ const FormGrid = styled(Grid)(() => ({
 
 const Contact = ({ id = "" }) => {
   return (
-    <div
-      id={id}
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        color: "#000000",
-        justifyContent: "center",
-        margin: 10,
-      }}>
-      <div
-        style={{
-          flexGrow: 8,
-          justifyContent: "center",
-          alignContent: "center",
-        }}>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-evenly",
-            textAlign: "center",
-            margin: 10,
-          }}>
-          <div
-            style={{
-              width: "30%",
-              alignContent: "center",
-            }}>
+    <div id={id} className="contact-container">
+      <div className="contact-background">
+        <div className="contact-wrapper">
+          <div className="contact-about-section">
             <p
               style={{
                 fontFamily: "Times New Roman",
@@ -52,7 +27,6 @@ const Contact = ({ id = "" }) => {
             </p>
             <p
               style={{
-                color: "#000000",
                 fontFamily: "Arial Narrow",
                 fontSize: "54px",
                 padding: 0,
@@ -61,42 +35,15 @@ const Contact = ({ id = "" }) => {
               }}>
               {`Let's Get In Touch`}
             </p>
-            <div
-              style={{
-                color: "#000000",
-              }}>
+            <div>
               <p style={{ textAlign: "center", textWrap: "wrap" }}>
                 Send me a message by filling out the form, I will reach back as
                 soon as possible!
               </p>
-              <p>We can also connect through:</p>
+              {/* <p>We can also connect through:</p> */}
             </div>
-            <Box sx={{ color: "primary.light" }}>
-              <Link
-                href="https://www.linkedin.com/in/gisseldiazf/"
-                underline="none"
-                target="_blank"
-                color="black">
-                <LinkedIn fontSize="large" />
-              </Link>
-
-              <Link
-                href="https://github.com/YoshiTunaiga"
-                underline="none"
-                target="_blank"
-                color="black">
-                <GitHub fontSize="large" />
-              </Link>
-            </Box>
           </div>
-          <div
-            style={{
-              boxShadow: "-4px 4px 8px 2px #000000",
-              borderRadius: "15px",
-              width: "430px",
-              height: "430px",
-              padding: "20px",
-            }}>
+          <div className="contact-form-container">
             <div
               style={{
                 display: "flex",

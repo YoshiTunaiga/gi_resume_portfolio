@@ -6,7 +6,7 @@ const Home = () => {
   const portfolioItems = [
     { title: "Resume", route: "resume", color: "#f5adad" },
     { title: "Projects", route: "projects", color: "#89b7e1" },
-    // { title: "Contact", route: "contact", color: "#f8f99a" },
+    { title: "Contact", route: "contact", color: "#f8f99a" },
   ];
   return (
     <div className="profile-container">
