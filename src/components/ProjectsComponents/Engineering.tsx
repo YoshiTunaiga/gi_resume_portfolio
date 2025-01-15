@@ -15,7 +15,7 @@ import { projectsData } from "../../data/projectsData";
 import { styled } from "@mui/material/styles";
 import IconButton, { IconButtonProps } from "@mui/material/IconButton";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { LinkedIn, GitHub } from "@mui/icons-material";
+import { PublicOutlined, GitHub } from "@mui/icons-material";
 interface ExpandMoreProps extends IconButtonProps {
   expand: boolean;
 }
@@ -98,20 +98,25 @@ const Engineering = () => {
               </Typography>
             </CardContent>
             <CardActions disableSpacing>
-              <IconButton aria-label="add to favorites">
-                <Link
-                  href="https://github.com/YoshiTunaiga"
-                  style={{ color: "#0074b1" }}>
-                  <LinkedIn />
-                </Link>
-              </IconButton>
-              <IconButton aria-label="share">
-                <Link
-                  href="https://github.com/YoshiTunaiga"
-                  style={{ color: "#000000" }}>
-                  <GitHub />
-                </Link>
-              </IconButton>
+              {project.link && (
+                <IconButton aria-label="add to favorites">
+                  <Link href={project.link} style={{ color: "#0074b1" }}>
+                    <PublicOutlined />
+                  </Link>
+                </IconButton>
+              )}
+              {project.gitHubLink && (
+                <IconButton aria-label="share">
+                  <Link
+                    href={project.gitHubLink}
+                    style={{
+                      textDecoration: "none",
+                      color: "var(--semantic-black)",
+                    }}>
+                    <GitHub />
+                  </Link>
+                </IconButton>
+              )}
               <ExpandMore
                 expand={expanded && selectedCard === index}
                 onClick={handleExpandClick}
