@@ -1,0 +1,102 @@
+export const experience = [
+  {
+    title: "Full Stack Software Engineer",
+    company: "Astrana Health (former ApolloMed, Orma Health), Alhambra, CA",
+    period: "May 2022 - March 2024",
+    achievements: [
+      "Built and maintained various scalable internal healthcare delivery applications as a core technical contributor for Astrana's Remote Patient Monitoring (RPM)/ Chronic Care Management (CCM) system, Orma.",
+      "Managed seamless health data integrations from Remote Patient Monitoring APIs, including Body Trace, Tenovi, and Garmin, resulting in the delivery of real-time vital sign data for 200+ patients, enhancing overall care efficiency.",
+      "Collaborated with cross-functional teams across various departments, such as Data, Product, and Strategy, to gather requirements, define user stories, and deliver solutions that effectively met business objectives.",
+      "Resolved technical problems that caused software bugs, resulting in an 80% reduction in reported issues over three quarters while providing timely solutions and updates to ensure the smooth functioning of the software.",
+      "Implemented query indexing to optimize front-end and back-end performance, which decreased page load times and improved data searches by 20%.",
+      "Coordinated with users and stakeholders to extract critical requirements leading to the creation of comprehensive Technical Design Documents and the implementation of robust full-stack features, such as customized Alerts and an advanced Search Bar, improving user experience and satisfaction by 40%.",
+    ],
+  },
+  {
+    title: "Junior Software Developer",
+    company: "Much (former Budget Better), Techstars '22, Norwalk, CT",
+    period: "February 2022 - May 2022",
+    achievements: [
+      "Accelerated the development of new user-facing social features on the Community Feed, resulting in 20% increased interaction and retention informed by user feedback.",
+      "Translated designs and wireframes into high-quality features, generating and optimizing reusable components for maximum DRY performance across a wide range of web-capable devices and browsers, improving user experience by 40%.",
+    ],
+  },
+  {
+    title: "Instructional Mentor PT",
+    company: "Fullstack Academy – Software Engineer Bootcamp, New York, NY",
+    period: "January 2022 - May 2022",
+    achievements: [
+      "Led intensive daily algorithm sessions focusing on optimization and whiteboard strategies, resulting in a 30% increase in problem-solving skills for cohorts exceeding 20 students each.",
+    ],
+  },
+  {
+    title: "Sexual and Behavioral Health Educator",
+    company:
+      "Community Healthcare Network (non-profit organization), New York, NY",
+    period: "Sept 2019 - June 2021",
+    achievements: [
+      "Operated a caseload of 90+ HIV-negative patients, delivering Sexual and Behavioral Health services focused on HIV/STI prevention and consistently documenting patient progress using eClinicalWorks HER.",
+      "Collaborated with team members to conduct case studies, effectively analyzing and resolving complex challenges across various clinics within the organization.",
+    ],
+  },
+  {
+    title: "Call Center Specialist",
+    company:
+      "Community Healthcare Network (non-profit organization), New York, NY",
+    period: "Mar 2015 - Sept 2019",
+    achievements: [
+      "Handled high-volume inbound calls with high-quality bilingual medical, dental, and social services customer service while scheduling appointments and verifying patients' insurance information.",
+      "Built strong, rapport-based relationships with a wide range of customers (e.g. patients, providers, hospitals, 911 departments, pharmacies), ensuring clarity and mutual understanding.",
+      "Assisted patients with educational information regarding their rights, the clinic's policies, procedures, and confidentiality.",
+    ],
+  },
+  {
+    title: "Emergency Medical Technician",
+    company: "SeniorCare Emergency Medical Services, New York, NY",
+    period: "Sept 2018 - Nov 2019",
+    achievements: [
+      "Examined patients for signs and symptoms of illness/injury and assisted other medical personnel as necessary.",
+      "Provided prompt and efficient care of the patient and stabilization of their condition prior to transport, while carefully handle of the patient in moving them to the ambulance.",
+      "Administered basic pre-hospital care within the limits of certification and in accordance with approved protocols.",
+      "Ambulance driving experience with zero accidents. Approx. 1,000+ Field Hours.",
+      "Emergency, Non-emergency, BLS, Bariatric & Interstate Transport & Event Standby.",
+    ],
+  },
+];
+
+export const skills = [
+  "JavaScript",
+  "TypeScript",
+  "Python",
+  "SQL",
+  "NoSQL",
+  "HTML/CSS",
+  "React",
+  "React Native",
+  "Node.js",
+  "Vite",
+  "Git",
+  "Express",
+  "Bubble.io",
+  "PostgreSQL",
+  "MongoDB",
+  "Firebase",
+  "AWS (S3, Amplify)",
+  "REST APIs",
+  "Databricks",
+  "CI/CD",
+  "Agile",
+  "Responsive Web Design",
+  "En-to-End Testing",
+  "Material-UI",
+  "Semantic-UI",
+  "styled-components",
+  "Bootstrap",
+  "tailwindcss",
+  "shadcn",
+  "Figma",
+  "Playwright",
+  "Jira",
+  "EHR",
+  "HIPAA",
+];

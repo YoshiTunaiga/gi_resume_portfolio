@@ -12,8 +12,7 @@ import {
 } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
-
-import { experience, skills } from "../../data/data";
+import { experience, skills } from "../../data/experienceData";
 
 const ProfessionalExperience = () => {
   return (

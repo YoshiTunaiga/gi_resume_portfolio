@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { projectsData } from "../../data/data";
 import {
   Card,
   CardContent,
@@ -11,6 +10,8 @@ import {
   Collapse,
   Link,
 } from "@mui/material";
+import { projectsData } from "../../data/projectsData";
+
 import { styled } from "@mui/material/styles";
 import IconButton, { IconButtonProps } from "@mui/material/IconButton";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
