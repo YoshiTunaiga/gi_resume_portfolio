@@ -36,6 +36,14 @@
   padding: 20px;
 }
 
+.contact-form-title {
+  padding: 0;
+  margin: 0;
+  font-family: "Times New Roman";
+  font-size: 54px;
+  color: #000000;
+}
+
 @media screen and (max-width: 910px) {
   .contact-container {
     margin-top: 20;
@@ -80,6 +88,13 @@
   .contact-about-section {
     align-content: center;
   }
+
+  .contact-form-title {
+    padding: 0;
+    margin: 0;
+    font-family: "Times New Roman";
+    font-size: 38px;
+  }
 }
 
 @media screen and (max-width: 430px) {
@@ -95,6 +110,13 @@
   .contact-about-section {
     align-content: center;
   }
+
+  .contact-form-title {
+    padding: 0;
+    margin: 0;
+    font-family: "Times New Roman";
+    font-size: 34px;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -109,5 +131,12 @@
 
   .contact-about-section {
     align-content: center;
+  }
+
+  .contact-form-title {
+    padding: 0;
+    margin: 0;
+    font-family: "Times New Roman";
+    font-size: 34px;
   }
 }

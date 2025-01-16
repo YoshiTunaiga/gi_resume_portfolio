@@ -79,17 +79,11 @@ const Contact = ({ id = "" }) => {
                 gap: 8,
               }}>
               {/* ============= FORM ============= */}
-              <p
+              <p className="contact-form-title">Contact Form</p>
+              <div
                 style={{
                   color: "#000000",
-                  fontFamily: "Times New Roman",
-                  fontSize: "54px",
-                  padding: 0,
-                  margin: 0,
                 }}>
-                Contact Form
-              </p>
-              <div style={{ color: "#000000" }}>
                 <form
                   id="myForm"
                   target="_blank"
@@ -97,7 +91,11 @@ const Contact = ({ id = "" }) => {
                     import.meta.env.VITE_FORM_API_KEY
                   }`}
                   method="POST"
-                  style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: 10,
+                  }}>
                   <FormGrid>
                     <TextField
                       fullWidth
