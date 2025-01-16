@@ -1,4 +1,4 @@
-import React, { useState, SyntheticEvent } from "react";
+import { useState } from "react";
 import { Container, Box, Tabs, Tab } from "@mui/material";
 import ProfessionalExperience from "../components/ResumeComponents/ProfessionalExperience";
 import Education from "../components/ResumeComponents/Education";
@@ -35,7 +35,7 @@ function TabPanel(props: TabPanelProps) {
 const Resume = () => {
   const [value, setValue] = useState(0);
 
-  const handleChange = (event: SyntheticEvent, newValue: number) => {
+  const handleChange = (newValue: number) => {
     setValue(newValue);
   };
 
@@ -68,7 +68,7 @@ const Resume = () => {
         <Tabs
           variant="scrollable"
           value={value}
-          onChange={handleChange}
+          onChange={(e, newValue) => handleChange(newValue)}
           TabIndicatorProps={{ sx: { display: "none" } }}
           sx={{
             "& .MuiTabs-flexContainer": {
