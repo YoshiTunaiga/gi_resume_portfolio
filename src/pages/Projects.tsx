@@ -3,8 +3,8 @@ import React, { useState, SyntheticEvent } from "react";
 import { Container, Box, Tabs, Tab } from "@mui/material";
 import { TabPanel } from "../components/TabPanel";
 import Engineering from "../components/ProjectsComponents/Engineering";
-import DataAnalysis from "../components/ProjectsComponents/DataAnalysis";
-import LinkedInPosts from "../components/ProjectsComponents/LinkedInPosts";
+// import DataAnalysis from "../components/ProjectsComponents/DataAnalysis";
+// import LinkedInPosts from "../components/ProjectsComponents/LinkedInPosts";
 import Testimonials from "../components/ProjectsComponents/Testimonials";
 import "../styles/projects.css";
 
@@ -57,20 +57,20 @@ const Projects = () => {
             },
           }}>
           <Tab label="Engineer" />
-          <Tab label="Data Analysis" />
-          <Tab label="LinkedIn Posts" />
+          {/* <Tab label="Data Analysis" />
+          <Tab label="LinkedIn Posts" /> */}
           <Tab label="LinkedIn Recommendations" />
         </Tabs>
         <TabPanel value={value} index={0}>
           <Engineering />
         </TabPanel>
-        <TabPanel value={value} index={1}>
+        {/* <TabPanel value={value} index={1}>
           <DataAnalysis />
         </TabPanel>
         <TabPanel value={value} index={2}>
           <LinkedInPosts />
-        </TabPanel>
-        <TabPanel value={value} index={3}>
+        </TabPanel> */}
+        <TabPanel value={value} index={1}>
           <Testimonials />
         </TabPanel>
       </Box>

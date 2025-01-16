@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { Button, TextField } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import SendIcon from "@mui/icons-material/Send";
@@ -10,6 +11,28 @@ const FormGrid = styled(Grid)(() => ({
 }));
 
 const Contact = ({ id = "" }) => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  /* ------- HANDLE FUNCTIONS -------- */
+  const handleName = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setName(event.target.value);
+  };
+  const handleEmail = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(event.target.value);
+  };
+  const handleMessage = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setMessage(event.target.value);
+  };
+
+  /* --------RESET FORM ------------ */
+  const resetForm = () => {
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
+
   return (
     <div id={id} className="contact-container">
       <div className="contact-background">
@@ -84,7 +107,8 @@ const Contact = ({ id = "" }) => {
                       placeholder="Enter your name"
                       autoComplete="customer name"
                       required
-                      // onChange={handleCustomerData}
+                      onChange={handleName}
+                      value={name}
                     />
                   </FormGrid>
                   <FormGrid>
@@ -95,7 +119,8 @@ const Contact = ({ id = "" }) => {
                       type="email"
                       placeholder="Enter your email"
                       autoComplete="customer email"
-                      // onChange={handleCustomerData}
+                      onChange={handleEmail}
+                      value={email}
                     />
                   </FormGrid>
                   <FormGrid>
@@ -106,28 +131,34 @@ const Contact = ({ id = "" }) => {
                       placeholder="Type your message here..."
                       multiline
                       rows={3}
+                      onChange={handleMessage}
+                      value={message}
                       // onChange={handleCustomerData}
                     />
                   </FormGrid>
+                  {/* ============= BUTTONS ============= */}
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      justifyContent: "space-evenly",
+                    }}>
+                    <Button variant="contained" size="small" type="submit">
+                      <p style={{ display: "block", padding: 5, margin: 0 }}>
+                        SEND
+                      </p>
+                      <SendIcon sx={{ fontSize: "14px" }} />
+                    </Button>
+                    <Button
+                      variant="contained"
+                      size="small"
+                      color="secondary"
+                      type="reset"
+                      onClick={() => resetForm()}>
+                      CLEAR
+                    </Button>
+                  </div>
                 </form>
-              </div>
-
-              {/* ============= BUTTONS ============= */}
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "space-evenly",
-                }}>
-                <Button variant="contained" size="small">
-                  <p style={{ display: "block", padding: 5, margin: 0 }}>
-                    SEND
-                  </p>
-                  <SendIcon sx={{ fontSize: "14px" }} />
-                </Button>
-                <Button variant="contained" size="small" color="secondary">
-                  CLEAR
-                </Button>
               </div>
             </div>
           </div>

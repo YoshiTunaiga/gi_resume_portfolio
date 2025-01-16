@@ -41,7 +41,7 @@ const Testimonials = () => {
           bgcolor: "var(--dark-background)",
         }}>
         {testimonialsData.map((testimonial) => (
-          <Card key={testimonial.date} sx={{ maxWidth: 500 }}>
+          <Card key={testimonial.date} sx={{}}>
             <CardHeader
               sx={{
                 textAlign: { xs: "center", sm: "left" },
@@ -62,8 +62,10 @@ const Testimonials = () => {
               title={testimonial.customer_name}
               subheader={testimonial.customer_tagline}
             />
-            <CardContent>
-              <Typography variant="body2" sx={{ color: "text.secondary" }}>
+            <CardContent sx={{ py: 0 }}>
+              <Typography
+                variant="body2"
+                sx={{ p: 0, m: 0, color: "text.secondary" }}>
                 {testimonial.text}
               </Typography>
             </CardContent>
