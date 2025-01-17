@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
-import path from "path";
+import { resolve } from "path";
 // import { fileURLToPath } from "url";
 import react from "@vitejs/plugin-react";
 
@@ -13,12 +13,15 @@ export default defineConfig({
   build: {
     sourcemap: true,
     rollupOptions: {
-      input: "./index.html",
+      input: {
+        main: resolve(__dirname, "index.html"),
+        nested: resolve(__dirname, "nested/index.html"),
+      },
     },
   },
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": resolve(__dirname, "./src"),
     },
   },
 });
