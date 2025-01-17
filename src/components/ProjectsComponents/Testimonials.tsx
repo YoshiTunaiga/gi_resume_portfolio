@@ -6,16 +6,8 @@ import {
   Avatar,
   CardContent,
   Typography,
-  // IconButton,
-  // CardMedia,
-  // CardActions,
-  // Collapse,
 } from "@mui/material";
 import { testimonialsData } from "../../data/testimonialsData";
-// import FavoriteIcon from "@mui/icons-material/Favorite";
-// import ShareIcon from "@mui/icons-material/Share";
-// import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-// import MoreVertIcon from "@mui/icons-material/MoreVert";
 
 const Testimonials = () => {
   return (
