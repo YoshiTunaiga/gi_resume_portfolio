@@ -9,19 +9,6 @@
   # Specify the default branch for production builds (usually 'main' or 'master')
   branch = "main"
 
-[[plugins]]
-  # Optional: Vite plugin to improve build performance on Netlify
-  package = "@netlify/plugin-vite"
-
-[context.production.environment]
-  # Production-specific environment variables
-  VITE_APP_ENV = "production"
-  BASE_URL = "https://gidiazsolutions.netlify.app/"  # URL of the deployed site
-
-[context.branch-deploy.environment]
-  # Optionally define branch-specific environment variables for branch deploys
-  VITE_APP_ENV = "staging"
-
   ## Uncomment to use this redirect for Single Page Applications like create-react-app.
   ## Not needed for static site generators.
   #[[redirects]]
