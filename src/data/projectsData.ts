@@ -5,7 +5,8 @@ export const projectsData = [
       "A React-based vanishing man (similar to hangman) game using computer science terms.",
     techSkills: "React, Vite, TypeScript, Tailwind CSS, Shadcn-ui, REST API",
     link: "https://cs-vanishing-man-game.vercel.app/",
-    image: "src/assets/Projects/cs-vanish-man-game.png",
+    image:
+      "https://github.com/YoshiTunaiga/gi_resume_portfolio/blob/main/src/assets/Projects/cs-vanish-man-game.png?raw=true",
     alt: "Computer Science Vanishing Man Game",
     gitHubLink: "https://github.com/YoshiTunaiga/cs-vanishing-man-game",
   },
@@ -17,7 +18,8 @@ export const projectsData = [
     techSkills:
       "React, Vite, TypeScript, Tailwind CSS, Appwrite, Shadcn-ui, REST API, Figma",
     link: "https://vitecare-gi.vercel.app/",
-    image: "src/assets/Projects/ViteCare - Patient Management System.png",
+    image:
+      "https://github.com/YoshiTunaiga/gi_resume_portfolio/blob/main/src/assets/Projects/ViteCare%20-%20Patient%20Management%20System.png?raw=true",
     alt: "ViteCare - Patient Management System",
     gitHubLink: "https://github.com/YoshiTunaiga/vitecare_gi",
   },
@@ -38,7 +40,8 @@ export const projectsData = [
       "A Vite-React app that serves as a single page application for a real state agent that manages New Beginning Homebuyer Partners which purpose is to restore property owners hope.",
     techSkills: "React, Vite, JavaScript, styled-components, Figma",
     link: "https://newbeginninghbp.netlify.app/",
-    image: "src/assets/Projects/New-Beginning-HBP-overview-pic.png",
+    image:
+      "https://github.com/YoshiTunaiga/gi_resume_portfolio/blob/main/src/assets/Projects/New-Beginning-HBP-overview-pic.png?raw=true",
     alt: "New Beginning HBP",
     gitHubLink: "https://github.com/YoshiTunaiga/new-beginning-hp",
   },
@@ -59,7 +62,8 @@ export const projectsData = [
       "My personal portfolio built with HTML/CSS, React.js and JavaScript.",
     techSkills: "React, JavaScript, HTML/CSS, Figma",
     link: "",
-    image: "src/assets/Projects/gi-primary-portfolio-overview-pic.png",
+    image:
+      "https://github.com/YoshiTunaiga/gi_resume_portfolio/blob/main/src/assets/Projects/gi-primary-portfolio-overview-pic.png?raw=true",
     alt: "Gi Primary Portfolio",
     gitHubLink: "https://github.com/YoshiTunaiga/Gi-portfolio",
   },
@@ -68,7 +72,8 @@ export const projectsData = [
     description: "Pick a star, name it, and own a piece of the universe.",
     techSkills: "JavaScript, React, Node.js, Express, REST API, Figma",
     link: "https://astro-mart-stars.herokuapp.com/",
-    image: "src/assets/Projects/Astro-Mart.png",
+    image:
+      "https://github.com/YoshiTunaiga/gi_resume_portfolio/blob/main/src/assets/Projects/Astro-Mart.png?raw=true",
     alt: "Astro Mart",
     gitHubLink: "https://github.com/05-gs-2109-wifight-the-power/star-app",
   },
@@ -79,7 +84,8 @@ export const projectsData = [
     techSkills:
       "React Native, Firebase, TypeScript, REST API, Styled-components, Figma",
     link: "https://www.youtube.com/watch?v=vZ7tQsjeJM4",
-    image: "src/assets/Projects/rumble-overview-pic.png",
+    image:
+      "https://github.com/YoshiTunaiga/gi_resume_portfolio/blob/main/src/assets/Projects/rumble-overview-pic.png?raw=true",
     alt: "Rumble",
     gitHubLink: "https://github.com/Team-Rumble/rumble",
   },
@@ -88,7 +94,8 @@ export const projectsData = [
     description: "",
     techSkills: "Python Programming, PyGame",
     link: "",
-    image: "src/assets/Projects/snake-game-overview-pic.png",
+    image:
+      "https://github.com/YoshiTunaiga/gi_resume_portfolio/blob/main/src/assets/Projects/snake-game-overview-pic.png?raw=true",
     alt: "Snake Game",
     gitHubLink: "https://github.com/YoshiTunaiga/snake-game-codeinplace",
   },
