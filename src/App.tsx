@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div style={{ flexGrow: 1, margin: 10 }}>
+    <div style={{ flexGrow: 1 }}>
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
