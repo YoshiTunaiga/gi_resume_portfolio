@@ -6,7 +6,7 @@ import Engineering from "../components/ProjectsComponents/Engineering";
 // import DataAnalysis from "../components/ProjectsComponents/DataAnalysis";
 // import LinkedInPosts from "../components/ProjectsComponents/LinkedInPosts";
 import Testimonials from "../components/ProjectsComponents/Testimonials";
-import "@/styles/projects.css";
+import "@/styles/projectStyle.css";
 
 const Projects = () => {
   const [value, setValue] = useState(0);

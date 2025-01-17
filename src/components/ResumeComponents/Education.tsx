@@ -1,6 +1,6 @@
 import { Container, Paper, Typography, Box, Divider } from "@mui/material";
 import Grid from "@mui/material/Grid2";
-import "@/styles/resume.css";
+import "@/styles/resumeStyle.css";
 
 import { education, certifications } from "../../data/educationData";
 

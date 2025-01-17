@@ -3,7 +3,7 @@ import { Button, TextField } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import SendIcon from "@mui/icons-material/Send";
 import { styled } from "@mui/system";
-import "@/styles/Contact.css";
+import "@/styles/contactStyle.css";
 
 const FormGrid = styled(Grid)(() => ({
   display: "flex",
