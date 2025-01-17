@@ -7,19 +7,18 @@ interface ProjectImageProps {
 }
 
 export const ProjectImage = ({ imagePath }: ProjectImageProps) => {
-  const imageUrl = new URL(
-    `../../assets/Projects/${imagePath}`,
-    import.meta.url
-  ).href;
-
   return (
     <Suspense
-      fallback={<div className="animate-pulse bg-gray-200 h-48 w-full" />}>
-      <ImageLoader
-        src={imageUrl}
-        alt="Project preview"
-        className="w-full h-48 object-cover"
-      />
+      fallback={
+        <div
+          style={{
+            width: "100%",
+            backgroundColor: "gray",
+            animation: "animate-pulse 1s infinite",
+          }}
+        />
+      }>
+      <ImageLoader src={imagePath} alt="Project preview" />
     </Suspense>
   );
 };

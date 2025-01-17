@@ -35,6 +35,7 @@ export const ImageLoader = ({ src, alt, className }: ImageLoaderProps) => {
       <img
         src={src}
         alt={alt}
+        width="100%"
         className={`${className} ${loading ? "invisible" : "visible"}`}
         loading="lazy"
       />

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import {
   Card,
   CardContent,
-  CardMedia,
   CardActions,
   Container,
   Paper,
@@ -11,11 +10,13 @@ import {
   Link,
 } from "@mui/material";
 import { projectsData } from "../../data/projectsData";
+import { ProjectImage } from "../common/ProjectImage";
 
 import { styled } from "@mui/material/styles";
 import IconButton, { IconButtonProps } from "@mui/material/IconButton";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { PublicOutlined, GitHub } from "@mui/icons-material";
+
 interface ExpandMoreProps extends IconButtonProps {
   expand: boolean;
 }
@@ -88,7 +89,7 @@ const Engineering = () => {
               flexDirection: "column",
               justifyContent: "space-between",
             }}>
-            <CardMedia component="img" alt={project.alt} src={project.image} />
+            <ProjectImage imagePath={project.image} />
             <CardContent sx={{ height: "100%" }}>
               <Typography variant="h5" component="div">
                 {project.title}
