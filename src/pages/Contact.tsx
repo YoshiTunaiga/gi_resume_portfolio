@@ -60,8 +60,8 @@ const Contact = ({ id = "" }) => {
             </p>
             <div>
               <p style={{ textAlign: "center", textWrap: "wrap" }}>
-                Send me a message by filling out the form, I will reach back as
-                soon as possible!
+                I'd love to hear from you! Just fill out the form, and I'll get
+                back to you as soon as I can. Looking forward to chatting!
               </p>
               {/* <p>We can also connect through:</p> */}
             </div>
