@@ -19,6 +19,7 @@ const Projects = () => {
     <Container
       maxWidth="xl"
       sx={{
+        my: 4,
         py: 4,
         "& .MuiContainer-root": {
           margin: 0,
