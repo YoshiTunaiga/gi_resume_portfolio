@@ -68,7 +68,7 @@ const Resume = () => {
         <Tabs
           variant="scrollable"
           value={value}
-          onChange={(e, newValue) => handleChange(newValue)}
+          onChange={(_e, newValue) => handleChange(newValue)}
           TabIndicatorProps={{ sx: { display: "none" } }}
           sx={{
             "& .MuiTabs-flexContainer": {
