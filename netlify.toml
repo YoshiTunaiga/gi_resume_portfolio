@@ -4,7 +4,7 @@
   publish = "dist"
   
   # The command to build the site
-  command = "vite build"
+  command = "npm run build"
 
   # Specify the default branch for production builds (usually 'main' or 'master')
   branch = "main"

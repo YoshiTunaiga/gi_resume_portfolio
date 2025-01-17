@@ -1,4 +1,4 @@
-import { useState, SyntheticEvent } from "react";
+import { useState } from "react";
 // import { Chip, Box } from "@mui/material";
 import { Container, Box, Tabs, Tab } from "@mui/material";
 import { TabPanel } from "../components/TabPanel";
@@ -11,7 +11,7 @@ import "../styles/projects.css";
 const Projects = () => {
   const [value, setValue] = useState(0);
 
-  const handleChange = (event: SyntheticEvent, newValue: number) => {
+  const handleChange = (newValue: number) => {
     setValue(newValue);
   };
 
@@ -40,7 +40,7 @@ const Projects = () => {
         <Tabs
           variant="scrollable"
           value={value}
-          onChange={handleChange}
+          onChange={(e, newValue) => handleChange(newValue)}
           TabIndicatorProps={{ sx: { display: "none" } }}
           sx={{
             "& .MuiTabs-flexContainer": {
