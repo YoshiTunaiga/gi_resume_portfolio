@@ -25,4 +25,5 @@ export default defineConfig({
     },
     extensions: [".js", ".jsx", ".ts", ".tsx", ".css"],
   },
+  assetsInclude: ["**/*.jpg", "**/*.png", "**/*.webp", "**/*.gif"],
 });
