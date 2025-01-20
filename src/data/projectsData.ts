@@ -30,7 +30,7 @@ export const projectsData = [
     techSkills: "React, Vite, REST API, Material-UI, Figma",
     link: "https://npi-medical-board.vercel.app/",
     image:
-      "https://media.licdn.com/dms/image/v2/D4E2DAQH8Bq72fmzfQQ/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1726674604946?e=1737403200&v=beta&t=Gy29l6lJnFfPNfFqhBDqjWzKquK3dlWheOfeAlw3l7w",
+      "https://github.com/YoshiTunaiga/npi-medical-board/raw/main/src/assets/portal-screen.png",
     alt: "NPI Medical Board",
     gitHubLink: "https://github.com/YoshiTunaiga/npi-medical-board",
   },
@@ -52,7 +52,7 @@ export const projectsData = [
     techSkills: "JavaScript, TypeScript, Python Programming, Problem Solving",
     link: "",
     image:
-      "https://media.licdn.com/dms/image/sync/v2/D4E27AQGypu_UAXxXuA/articleshare-shrink_800/articleshare-shrink_800/0/1730366061672?e=1737403200&v=beta&t=8VHiZfCZoK_DR9LVxOlrNjEI1o5TyWnkpjblOmgOy1Q",
+      "https://itchronicles.com/wp-content/uploads/2024/01/pair-programming.jpg",
     alt: "AlgoExplained",
     gitHubLink: "https://github.com/YoshiTunaiga/Algo-Explained",
   },
