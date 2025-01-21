@@ -52,7 +52,7 @@ export const projectsData = [
     techSkills: "JavaScript, TypeScript, Python Programming, Problem Solving",
     link: "",
     image:
-      "https://itchronicles.com/wp-content/uploads/2024/01/pair-programming.jpg",
+      "https://github.com/YoshiTunaiga/gi_resume_portfolio/blob/main/src/assets/Projects/algo-explained-overview.png?raw=true",
     alt: "AlgoExplained",
     gitHubLink: "https://github.com/YoshiTunaiga/Algo-Explained",
   },
