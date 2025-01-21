@@ -123,6 +123,15 @@ const Engineering = () => {
                 onClick={handleExpandClick}
                 aria-expanded={expanded}
                 aria-label="show more">
+                <Typography
+                  sx={{
+                    fontSize: 14,
+                    fontWeight: "bold",
+                    display:
+                      expanded && selectedCard === index ? "none" : "block",
+                  }}>
+                  Tech - Skills
+                </Typography>
                 <ExpandMoreIcon />
               </ExpandMore>
             </CardActions>
@@ -131,9 +140,6 @@ const Engineering = () => {
               timeout="auto"
               unmountOnExit>
               <CardContent>
-                <Typography sx={{ marginBottom: 1, fontWeight: "bold" }}>
-                  Tech Skills
-                </Typography>
                 <Typography sx={{ marginBottom: 2 }}>
                   {project.techSkills}
                 </Typography>
