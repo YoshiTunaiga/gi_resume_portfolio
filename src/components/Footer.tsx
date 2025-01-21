@@ -1,4 +1,4 @@
-import { Divider, Box, Typography, Link } from "@mui/material";
+import { Divider, Box, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import { LinkedIn, GitHub } from "@mui/icons-material";
 
@@ -17,11 +17,12 @@ const Footer = () => {
             <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
               <LinkedIn fontSize="small" />
               <Typography variant="body2">
-                <Link
+                <a
+                  target="_blank"
                   href="https://www.linkedin.com/in/gisseldiazf/"
                   style={{ color: "var(--gold)" }}>
                   linkedin.com/in/gisseldiazf
-                </Link>
+                </a>
               </Typography>
             </Box>
           </Box>
@@ -32,11 +33,12 @@ const Footer = () => {
             <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
               <GitHub fontSize="small" />
               <Typography variant="body2">
-                <Link
+                <a
+                  target="_blank"
                   href="https://github.com/YoshiTunaiga"
                   style={{ color: "var(--gold)" }}>
                   github.com/YoshiTunaiga
-                </Link>
+                </a>
               </Typography>
             </Box>
           </Box>

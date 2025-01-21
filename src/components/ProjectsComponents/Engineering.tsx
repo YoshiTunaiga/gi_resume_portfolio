@@ -7,7 +7,6 @@ import {
   Paper,
   Typography,
   Collapse,
-  Link,
 } from "@mui/material";
 import { projectsData } from "../../data/projectsData";
 import { ProjectImage } from "../common/ProjectImage";
@@ -101,21 +100,25 @@ const Engineering = () => {
             <CardActions disableSpacing>
               {project.link && (
                 <IconButton aria-label="add to favorites">
-                  <Link href={project.link} style={{ color: "#0074b1" }}>
+                  <a
+                    target="_blank"
+                    href={project.link}
+                    style={{ color: "#0074b1" }}>
                     <PublicOutlined />
-                  </Link>
+                  </a>
                 </IconButton>
               )}
               {project.gitHubLink && (
                 <IconButton aria-label="share">
-                  <Link
+                  <a
+                    target="_blank"
                     href={project.gitHubLink}
                     style={{
                       textDecoration: "none",
                       color: "var(--semantic-black)",
                     }}>
                     <GitHub />
-                  </Link>
+                  </a>
                 </IconButton>
               )}
               <ExpandMore
