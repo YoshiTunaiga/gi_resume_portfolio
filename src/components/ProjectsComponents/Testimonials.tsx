@@ -3,7 +3,7 @@ import {
   Paper,
   Card,
   CardHeader,
-  Avatar,
+  // Avatar,
   CardContent,
   Typography,
 } from "@mui/material";
@@ -41,16 +41,6 @@ const Testimonials = () => {
                 flexDirection: { xs: "column", sm: "row" },
                 justifyContent: "center",
               }}
-              avatar={
-                <Avatar
-                  sx={{ bgcolor: "red" }}
-                  aria-label="recipe"
-                  src={
-                    testimonial.customer_avatar && testimonial.customer_avatar
-                  }>
-                  {testimonial.customer_name[0]}
-                </Avatar>
-              }
               title={testimonial.customer_name}
               subheader={testimonial.customer_tagline}
             />
