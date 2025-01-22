@@ -18,6 +18,15 @@
   width: 100%;
 }
 
+.resume-section-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  text-align: left;
+  width: 100%;
+}
+
 @media screen and (max-width: 430px) {
   .single-ed-container {
     gap: 30px;

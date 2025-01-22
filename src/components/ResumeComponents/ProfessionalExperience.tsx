@@ -3,15 +3,15 @@ import {
   Paper,
   Typography,
   Box,
-  List,
-  ListItem,
-  ListItemText,
-  ListItemIcon,
+  // List,
+  // ListItem,
+  // ListItemText,
+  // ListItemIcon,
   Chip,
   Divider,
 } from "@mui/material";
 import Grid from "@mui/material/Grid2";
-import ArrowRightIcon from "@mui/icons-material/ArrowRight";
+// import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import { experience, skills } from "../../data/experienceData";
 
 const ProfessionalExperience = () => {
@@ -45,28 +45,31 @@ const ProfessionalExperience = () => {
           <Typography variant="h6" gutterBottom>
             Professional Experience
           </Typography>
-          {experience.map((job, index) => (
-            <Box key={index} sx={{ mb: 3 }}>
-              <Grid
-                container
-                justifyContent="space-between"
-                textAlign={{ xs: "center", sm: "left" }}
-                alignItems="center">
-                <Grid>
-                  <Typography variant="subtitle1" fontWeight="bold">
-                    {job.title}
-                  </Typography>
-                  <Typography variant="subtitle2" color="textSecondary">
-                    {job.company}
-                  </Typography>
+          <Box className="resume-section-box">
+            {experience.map((job, index) => (
+              <Box key={index} sx={{ mb: 3, mt: 2 }}>
+                <Grid
+                  container
+                  justifyContent="space-between"
+                  textAlign={{ sm: "left" }}>
+                  <Grid>
+                    <Typography variant="subtitle1" fontWeight="bold">
+                      {job.title}
+                    </Typography>
+                    <Typography
+                      variant="subtitle2"
+                      color="textSecondary"
+                      sx={{ maxWidth: { xs: "100%", sm: "100%" } }}>
+                      {job.company}
+                    </Typography>
+                  </Grid>
+                  <Grid>
+                    <Typography variant="body2" color="textSecondary">
+                      {job.period}
+                    </Typography>
+                  </Grid>
                 </Grid>
-                <Grid>
-                  <Typography variant="body2" color="textSecondary">
-                    {job.period}
-                  </Typography>
-                </Grid>
-              </Grid>
-              <List
+                {/* <List
                 dense
                 sx={{
                   "& .MuiListItemIcon-root": {
@@ -84,9 +87,10 @@ const ProfessionalExperience = () => {
                     />
                   </ListItem>
                 ))}
-              </List>
-            </Box>
-          ))}
+              </List> */}
+              </Box>
+            ))}
+          </Box>
         </Box>
       </Paper>
     </Container>
